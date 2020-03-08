@@ -1,42 +1,76 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>Document</title>
-    <style>
-        body{
-            padding: 0;
-            margin: 0;
-        }
-        #img_menu{
-            width: 100%;
-            height: 3000px;
-            position: absolute;
-            
-        
-        }
-        #right-menu{
-            width: 50%;
-            height:3000px;
-            background-color:rgb(112, 12, 12);
-            position: relative;
-            margin-left:50%;
-            opacity:0.8;
-            color:white;
-           
-        }
-    </style>
-</head>
-<body>
-    <div id="menu">
-        <div id="img_menu">
-            <img src="pizza-menu.JPG" height="3000px" width="100%">
-        </div>
-        <div id="right-menu">
-            <h1>Pizzaria Escaleno</h1>
-        </div>
-    </div>    
-</body>
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	    <title>Document</title>
+	    <style>
+	        body{
+	            padding: 0;
+	            margin: 0;
+	            font-family:Times New Roman;
+	        }
+	        #img_menu{
+	            width: 100%;
+	            height: 1000px;
+	            position: absolute;
+	            
+	        
+	        }
+	        #right-menu{
+	            width: 50%;
+	            height:1000px;
+	            background-image:linear-gradient(to bottom right, #610B21, #190202);
+	            position: relative;
+	            margin-left:50%;
+	            opacity:0.8;
+	            color:white;
+
+	           
+	        }
+	        #right-menu h1{
+	        	padding-top:350px;
+	        	text-align:center;
+	        	font-size:60px; 
+	        	text-shadow: black 0.1em 0.1em 0.2em
+	        }
+	        #right-menu h2{
+	        	text-align:center;
+	        	font-size:40px; 
+	        	text-shadow: black 0.1em 0.1em 0.2em
+	        }
+	        .go_to_section{
+	        	height:50px;
+	        	width: 400px;
+	        	text-align:center;
+	        	line-height:50px;
+	        	margin:auto;
+	        	color:#111;
+	        	background-color:#FFF;
+	        	margin-top:50px;
+	        	border-radius: 25px;
+	        	font-size:20px;
+	        }
+	    </style>
+
+	</head>
+
+	<body>
+
+	    <div id="menu">
+	        <div id="img_menu">
+	            <img src="pizza-menu.JPG" height="1000px" width="100%">
+	        </div>
+	        <div id="right-menu">
+	            <h1><strong>Pizzaria Escaleno</strong></h1>
+	            <h2><i>Since1977</i></h2>
+
+	            <div class="go_to_section"> Section 1</div>
+	            <div class="go_to_section"> Section 2</div>
+	            <div class="go_to_section"> Section 3</div>
+	        </div>
+	    </div>    
+	    
+	</body>
 </html>
