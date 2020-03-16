@@ -222,7 +222,21 @@ body{
     background-color:#FFF;
 }
 #footer{
-    margin-left: 2%;
     text-align: center;
     color:#FFF;
-    background-color: #111;
+    background-image:linear-gradient(to bottom right, #610B21, #190202);
+
+}
+#menu_header{
+    height:100px;
+    width: 100%;
+    background-image:linear-gradient(to bottom right, #610B21, #190202);
+    color:white;
+    float: left;
+    text-align: center;
+    
+}
+#menu_header h1{
+    line-height: 100px;
+    font-family:TimesNewRoman;
+}
