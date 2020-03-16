@@ -3,243 +3,10 @@
 	<head>
 	    <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
 	    <title>Pizzaria Escaleno</title>
-	    <style>
-			/*Menu - Denison*/
-	        body{
-	            padding: 0;
-	            margin: 0;
-	            font-family:Times New Roman;
-	        }
-	        #img_menu{
-	            width: 100%;
-	            height: 1000px;
-	            position: absolute;
-	            
-	        
-	        }
-	        #right-menu{
-	            width: 50%;
-	            height:1000px;
-	            background-image:linear-gradient(to bottom right, #610B21, #190202);
-	            position: relative;
-	            margin-left:50%;
-	            opacity:0.8;
-	            color:white;
-
-	           
-	        }
-	        #right-menu h1{
-	        	padding-top:350px;
-	        	text-align:center;
-	        	font-size:60px; 
-	        	text-shadow: black 0.1em 0.1em 0.2em
-	        }
-	        #right-menu h2{
-	        	text-align:center;
-	        	font-size:40px; 
-	        	text-shadow: black 0.1em 0.1em 0.2em
-	        }
-	        .go_to_section{
-	        	height:50px;
-	        	width: 400px;
-	        	text-align:center;
-	        	line-height:50px;
-	        	margin:auto;
-	        	color:#111;
-	        	background-color:#FFF;
-	        	margin-top:50px;
-	        	border-radius: 25px;
-	        	font-size:20px;
-
-			
-	        }
-
-			/*Historia - Guilherme*/
-			  #historia{
-              background-color:rgb(88, 68, 23);
-			  width: 100%;
-			  height: 600px;
-			  }
-			  #margin_text{
-				  text-align: center;
-			  }
-              #left_history{
-				  background-color: rgb(241, 240, 233);
-                  width: 48%;
-				  font-size: 30px;
-				  text-shadow: rgb(85, 85, 85) 0.1em 0.1em 0.2em;
-				  margin: 10px;
-				  height: 550px;
-				  float: left;
-				  border-radius: 25px;
-              }
-			  #right_history{
-				background-color: rgb(241, 240, 233);
-                  width: 48%;
-				  margin: 10px;
-				  height: 550px;
-				  float: right;
-				  border-radius: 25px;
-				  overflow: hidden;
-			  }
-
-			/*Cardapio - Denison*/
-
-			#menu_cardapio{
-				height:150px;
-				width: 100%;
-				background-image:linear-gradient(to bottom right, #610B21, #190202);
-				color:white;
-				
-				float: left;
-
-			}
-			#menu_cardapio_left{
-				max-width:20%;
-				height:100%;
-				padding-top:50px;
-				padding-left:50px;
-				float:left;
-				text-shadow: black 0.1em 0.1em 0.2em
-			}
-			#menu_cardapio_meio{
-				height:100%;
-				width:60%;
-				float: left;
-				padding-top:30px;
-				padding-left:30px;
-			}
-			#menu_cardapio_meio ul{
-				margin-left:200px;
-				
-			}
-			#menu_cardapio_meio li{
-				color:black;
-				float: left;
-				list-style:none;
-				padding-left:40px;
-				padding-right: 40px;
-				padding-top:50px;
-				color:white;
-				text-shadow: black 0.1em 0.1em 0.2em
-			}
-			#menu_cardapio_rigth_search{
-				float: left;
-				border-radius: 10px;
-				margin-top:85px;
-				margin-left: 30px;
-			}
-			#btn_search{
-				background-color: white;
-				height: 30px;
-				width: 30px;
-				border-radius: 10px;
-				margin-top: 85px;
-				margin-left:5px;
-			}
-			#meu_cardapio_vendas{
-				height:1000px;
-				/*background-color: wheat;*/
-				width:1700px;
-				margin:auto;
-			}
-			.pizza{
-				/*background-color: tomato;*/
-				height:200px;
-				width:200px;
-				text-align: center;
-				margin:60px;
-				margin-top: 80px;
-				float: left;
-
-			}
-			.pizza h4 {
-				margin-top:10px;
-				margin-bottom:10px;
-			}
-			.btn_comprar{
-				float:left;
-				margin-left:65px;
-				margin-top: 10px;
-				margin-bottom:10px;
-				border-radius:5px;
-				border:1px dotted  #610B21 ;
-				padding-left: 5px;
-				padding-right: 5px;
-			}
-														
-			/*Contato - Caio*/
-
-			#left-contato {
-				width: 50%;
-				height: 750px;
-				position: relative;
-				background-color: whitesmoke;
-				color: black;
-				float: left;
-				background-image:linear-gradient #A9A9A9; 
-				
-			}
-			#left-contato {
-				text-align: center;
-			}
-			#ccontato{
-				font-size:50px;
-			}
-			
-
-			#forno {
-				margin-top: 10%;
-				margin-left: 20%;
-				width:100px;
-				height:100px;
-
-			}
-			#restaurante {
-				margin-left: 20%;
-				margin-top: 1%;
-				width:100px;
-				height:100px;
-
-			}
-			#localiza{
-
-				text-align: center;
-				margin:22%
-			}
-
-
-			#mapa {
-				width: 50%;
-				height: 750px;
-				position: center;
-				background-color: whitesmoke;
-  				color: black;
-  				float: right;
-			}
-
-	        
-			#mapa h1{
-	        	text-align:center;
-	        	font-size:50px;
-			}
-			#mapa iframe{
-				margin-left: 160px;
-	        	color:#111;
-	        	background-color:#FFF;
-	        }
-			#footer{
-				margin-left: 2%;
-				text-align: center;
-				color:#FFF;
-				background-color: #111;
-				
-			}
-
-
-	    </style>
+	    
 
 	</head>
 
@@ -247,7 +14,7 @@
 
 	    <div id="menu">
 	        <div id="img_menu">
-	            <img src="pizza-menu.JPG" height="1000px" width="100%">
+	            <img src="assets/imagens/pizza-menu.JPG" height="1000px" width="100%">
 	        </div>
 	        <div id="right-menu">
 	            <h1><strong>Pizzaria Escaleno</strong></h1>
@@ -266,7 +33,7 @@
 				<p id = "margin_text">O desejo de abrir uma pizzaria nasceu apartir de uma próposta de atividade do próprio SENAI. Os sonhos deles é oferecer uma pizza de qualidade para todos do seu municipio.</p>
 			</div>
 			<div id="right_history">
-				<img src="restaurante.jpg" height="550px" width="831px" border-radius="25px">
+				<img src="assets/imagens/restaurante.jpg" height="550px" width="831px" border-radius="25px">
 				</div>
 		</section>   
 		
@@ -286,47 +53,52 @@
 				</div>
 				<div id ="menu_cardapio_rigth">
 					<input type="search" id="menu_cardapio_rigth_search">
-					<img src="search.PNG" id="btn_search">
+					<img src="assets/imagens/search.PNG" id="btn_search">
 				</div>
 			</div>
 
 
 			<div id="meu_cardapio_vendas">
 				<div class="pizza">
-					<img src="pizza_venda.JPG" height="175px" width="175px">
+					<img src="assets/imagens/pizza_venda.JPG" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<div class="btn_comprar">
 						<h5>Comprar</h5>
 					</div>
 				</div>
 				<div class="pizza">
-					<img src="pizza_venda2.JPG" height="175px" width="175px">
+					<img src="assets/imagens/pizza_venda2.JPG" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<div class="btn_comprar">
 						<h5>Comprar</h5>
 					</div>
 				</div>
 				<div class="pizza">
-					<img src="pizza_venda.JPG" height="175px" width="175px">
+					<img src="assets/imagens/pizza_venda.JPG" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<div class="btn_comprar">
 						<h5>Comprar</h5>
 					</div>
 				</div>
 				<div class="pizza">
-					<img src="pizza_venda2.JPG" height="175px" width="175px">
+					<img src="assets/imagens/pizza_venda2.JPG" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<div class="btn_comprar">
 						<h5>Comprar</h5>
 					</div>
 				</div>
 				<div class="pizza">
-					<img src="pizza_venda.JPG" height="175px" width="175px">
+					<img src="assets/imagens/pizza_venda.JPG" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<div class="btn_comprar">
 						<h5>Comprar</h5>
 					</div>
 				</div>
+				<HR>
+
+
+
+				</HR>
 			</div>
 
 
