@@ -116,6 +116,12 @@ body{
     color:white;
     text-shadow: black 0.1em 0.1em 0.2em
 }
+#menu_cardapio_meio li button {
+    border-radius: 10px;
+
+   
+
+}
 #menu_cardapio_rigth_search{
     float: left;
     border-radius: 10px;
@@ -130,11 +136,25 @@ body{
     margin-top: 85px;
     margin-left:5px;
 }
-#meu_cardapio_vendas{
+#meu_cardapio_vendas_salgado{
     height:1000px;
-    /*background-color: wheat;*/
     width:1700px;
     margin:auto;
+}
+#meu_cardapio_vendas_doce{
+    height:1000px;
+    width:1700px;
+    margin:auto;
+    background-color:red;
+}
+#meu_cardapio_vendas_bebidas{
+    height:1000px;
+    width:1700px;
+    margin:auto;
+    background-color:blue;
+}
+.escondido{
+    display:none;
 }
 .pizza{
     /*background-color: tomato;*/
@@ -146,6 +166,10 @@ body{
     float: left;
 
 }
+.pizza img{
+    float:left;
+    margin-left: 20px
+}
 .pizza h4 {
     margin-top:20px;
     margin-bottom:20px;
@@ -156,16 +180,33 @@ body{
     margin-top: 10px;
     margin-bottom:10px;
     border-radius:5px;
-    border:1px dotted  #610B21 ;
+    border:1px solid  #610B21;
     padding-left: 5px;
     padding-right: 5px;
     cursor: pointer;
+    transition: 0.8s;
 }
 .btn_comprar :hover{
     background-color: #610B21;
     border:1px dotted white ;
     color:white;
 }
+.informacao_sobre_pizza{
+    height:300px;
+    width:300px;
+    float:left;
+    background-color:#fff;
+    position:absolute;
+    margin-left: 200px;
+    border-radius: 15px;
+    border:2px solid  #610B21;
+    opacity:95%;
+    padding-left:15px;
+    padding-right:15px;
+    display: block;
+
+}
+
 
                                             
 /*Contato - Caio*/

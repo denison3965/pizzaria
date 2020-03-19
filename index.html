@@ -5,7 +5,50 @@
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+
 	    <title>Pizzaria Escaleno</title>
+	    <script >
+	    	
+	    	var div1;
+			var div2;
+			var div3;
+
+			window.onload = function(){
+				div1 = document.getElementById("meu_cardapio_vendas_salgado");
+				div2 = document.getElementById("meu_cardapio_vendas_doce");
+				div3 = document.getElementById("meu_cardapio_vendas_bebidas");
+
+				var bt1 = document.getElementById("bt1");
+				bt1.onclick = mostrarDiv1;
+				var bt2 = document.getElementById("bt2");
+				bt2.onclick = mostrarDiv2;
+				var bt3 = document.getElementById("bt3");
+				bt3.onclick = mostrarDiv3;
+
+				
+				div2.classList.add("escondido");
+				div3.classList.add("escondido");
+
+			}
+
+			function mostrarDiv1(){
+				div1.classList.remove("escondido");
+				div2.classList.add("escondido");
+				div3.classList.add("escondido");
+			}
+			function mostrarDiv2(){
+				div1.classList.add("escondido");
+				div2.classList.remove("escondido");
+				div3.classList.add("escondido");
+
+			}
+			function mostrarDiv3(){
+				div1.classList.add("escondido");
+				div2.classList.add("escondido");
+				div3.classList.remove("escondido");
+
+			}
+	    </script>
 	    
 
 	</head>
@@ -35,32 +78,38 @@
 			<div id="right_history">
 				<img src="assets/imagens/restaurante.jpg" height="550px" width="913px" border-radius="25px">
 				</div>
-		</section id="cardapio">   
+		</section >   
 		
 
 		
-		
+		<section id="cardapio">
 			<div id="menu_cardapio">
 				<div id="menu_cardapio_left">
 					<h1><strong>Cardapio</strong></h1>
 				</div>
 				<div id="menu_cardapio_meio">
 					<ul>
-						<li><h2>Pizzas Salgadas</h2></li>
-						<li><h2>Pizzas Doces</h2></li>
-						<li><h2>Bebidas</h2></li>
+						<li><button id="bt1"><h2>Pizzas Salgadas</h2></button></li>
+						<li><button id="bt2"><h2>Pizzas Doces</h2></button></li>
+						<li><button id="bt3"><h2>Bebidas</h2></button></li>
 					</ul>
 				</div>
 				<div id ="menu_cardapio_rigth">
-					<input type="search" id="menu_cardapio_rigth_search">
+					<input type="search" id="menu_cardapio_rigth_search" placeholder="  search...">
 					<img src="assets/imagens/search.PNG" id="btn_search">
 				</div>
 			</div>
 
 
-			<div id="meu_cardapio_vendas">
+			<div id="meu_cardapio_vendas_salgado">
 				<div class="pizza">
-					<img src="assets/imagens/pizza_venda.JPG" height="175px" width="175px">
+					<img class="img_pizzas" src="assets/imagens/pizza_venda.JPG" height="175px" width="175px">
+					<div class="informacao_sobre_pizza"> 
+						<h3>Pizza Portuguesa</h3>
+						<hr>
+						<h4>Ingredientes :</h4>
+						<p>Molho, mussarela, presunto, calabresa, ovos, cebola, azeitonas e orégano</p>
+					 </div>
 					<h4>Sobre essa pizza</h4>
 					<h5>R$ 35,50</h5>
 					<div class="btn_comprar">
@@ -145,6 +194,9 @@
 				</div>
 				
 			</div>
+			<div id="meu_cardapio_vendas_doce">oi</div>
+			<div id="meu_cardapio_vendas_bebidas">oi</div>
+
 
 
 
