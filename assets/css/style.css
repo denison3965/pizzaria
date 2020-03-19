@@ -57,23 +57,38 @@ body{
       text-align: center;
   }
   #left_history{
-      background-color: rgb(241, 240, 233);
-      width: 48%;
+      width: 35%;
       font-size: 30px;
       text-shadow: rgb(85, 85, 85) 0.1em 0.1em 0.2em;
-      margin: 18px;
+      margin-top: 70px;
+      margin-bottom: 70px;
+      margin-left: 170px;
       height: 550px;
       float: left;
       border-radius: 25px;
+      box-shadow: -30px -30px 15px #610B21;
+  }
+  #linha_vertical{
+    height:600px;
+    width:2px;
+    float:left;
+    margin-left:115px;
+    margin-top:50px;
+    background-color: white;
+    border:1px solid #888888 ;
+    
   }
   #right_history{
     background-color: rgb(241, 240, 233);
-      width: 48%;
-      margin: 18px;
+      width: 35%;
+      margin-top: 70px;
+      margin-bottom: 70px;
+      margin-right: 170px;
       height: 550px;
       float: right;
       border-radius: 25px;
       overflow: hidden;
+      box-shadow: 30px -30px 15px #610B21;
   }
 
 /*Cardapio - Denison*/
@@ -145,13 +160,13 @@ body{
     height:1000px;
     width:1700px;
     margin:auto;
-    background-color:red;
+    
 }
 #meu_cardapio_vendas_bebidas{
     height:1000px;
     width:1700px;
     margin:auto;
-    background-color:blue;
+    
 }
 .escondido{
     display:none;
@@ -173,6 +188,10 @@ body{
 .pizza h4 {
     margin-top:20px;
     margin-bottom:20px;
+}
+#bebidas{
+    margin-right: 40px;
+    margin-left: 40px;
 }
 .btn_comprar h5{
     float:left;
@@ -213,7 +232,7 @@ body{
 
 #left-contato {
     width: 50%;
-    height: 750px;
+    height: 900px;
     position: relative;
     background-color: whitesmoke;
     color: black;
@@ -252,8 +271,7 @@ body{
 
 #mapa {
     width: 50%;
-    height: 750px;
-    position: center;
+    height: 900px;
     background-color: whitesmoke;
       color: black;
       float: right;
@@ -265,18 +283,33 @@ body{
     font-size:50px;
 }
 #mapa iframe{
-    margin-left: 160px;
     color:#111;
     background-color:#FFF;
 }
+#sombra_do_mapa{
+    width:620px;
+    height:470px;
+    border:10px solid #610B21;
+    float:right;
+    margin-right: 190px;
+    border-radius: 5px;
+   
+}
 #footer{
+    
+    height:250px;
+    width:100%;
+    float:left;
     text-align: center;
     color:#FFF;
     background-image:linear-gradient(to bottom right, #610B21, #190202);
 
 }
+#footer h5{
+    margin:30px;
+}
 #menu_header{
-    height:100px;
+    height:150px;
     width: 100%;
     background-image:linear-gradient(to bottom right, #610B21, #190202);
     color:white;
@@ -285,6 +318,6 @@ body{
     
 }
 #menu_header h1{
-    line-height: 100px;
+    line-height: 150px;
     font-family:TimesNewRoman;
 }
