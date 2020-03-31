@@ -3,6 +3,10 @@ body{
     margin: 0;
     font-family:TimesNewRoman;
 }
+html{
+    scroll-behavior: smooth;
+}
+
 #img_menu{
     width: 100%;
     height: 1000px;
@@ -45,13 +49,20 @@ body{
     font-size:20px;
 
 
+
+}
+.go_to_section a{
+    text-decoration:none;
+    color:#111;
+    transition-delay: 2s;
+
 }
 
 /*Historia - Guilherme*/
   #historia{
   background-image:url(assets/imagens/wood.jpg);
   width: 100%;
-  height: 600px;
+  height: 1000px;
   }
   #margin_text{
       text-align: center;
@@ -60,7 +71,7 @@ body{
       width: 35%;
       font-size: 30px;
       text-shadow: rgb(85, 85, 85) 0.1em 0.1em 0.2em;
-      margin-top: 70px;
+      margin-top: 180px;
       margin-bottom: 70px;
       margin-left: 170px;
       height: 550px;
@@ -69,7 +80,7 @@ body{
       box-shadow: -30px -30px 15px #610B21;
   }
   #linha_vertical{
-    height:600px;
+    height:850px;
     width:2px;
     float:left;
     margin-left:115px;
@@ -81,7 +92,7 @@ body{
   #right_history{
     background-color: rgb(241, 240, 233);
       width: 35%;
-      margin-top: 70px;
+      margin-top: 260px;
       margin-bottom: 70px;
       margin-right: 170px;
       height: 550px;
