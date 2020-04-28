@@ -109,7 +109,6 @@ html{
     width: 100%;
     background-image:linear-gradient(to bottom right, #610B21, #190202);
     color:white;
-    
     float: left;
 
 }
@@ -143,7 +142,12 @@ html{
     text-shadow: black 0.1em 0.1em 0.2em
 }
 #menu_cardapio_meio li button {
+    border:none;
+    background:none;
     border-radius: 10px;
+    color:white;
+    text-shadow: rgb(85, 85, 85) 0.1em 0.1em 0.2em;
+
 
    
 
