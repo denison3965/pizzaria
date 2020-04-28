@@ -6,6 +6,8 @@ body{
 html{
     scroll-behavior: smooth;
 }
+::selection { background: #610B21; color: white; }
+::-moz-selection { background: #610B21; color: white; }
 
 #img_menu{
     width: 100%;
@@ -196,6 +198,10 @@ html{
     float: left;
 
 }
+.pizza:hover .informacao_sobre_pizza{
+    display:block;
+}
+
 .pizza img{
     float:left;
     margin-left: 20px
@@ -230,14 +236,15 @@ html{
     width:300px;
     float:left;
     background-color:#fff;
-    position:absolute;
+    position: absolute;
     margin-left: 200px;
+    margin-top: -280px;
     border-radius: 15px;
     border:2px solid  #610B21;
     opacity:95%;
     padding-left:15px;
     padding-right:15px;
-    display: block;
+    display:none;
 
 }
 
@@ -310,6 +317,13 @@ html{
     border-radius: 5px;
    
 }
+#borda_do_mapa{
+    width:620px;
+    height:470px;
+    border:10px solid #610B21;
+    transform: translate(-7%, 7%);
+    border-radius: 5px;
+}
 #footer{
     
     height:250px;
@@ -322,6 +336,10 @@ html{
 }
 #footer h5{
     margin:30px;
+}
+#footer a{
+    text-decoration: none;
+    color: white;
 }
 #menu_header{
     height:150px;
