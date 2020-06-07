@@ -28,7 +28,6 @@ html{
    
 }
 #right-menu h1{
-    padding-top:350px;
     text-align:center;
     font-size:60px; 
     text-shadow: black 0.1em 0.1em 0.2em
@@ -58,6 +57,15 @@ html{
     color:#111;
     transition-delay: 2s;
 
+}
+.container_logo{
+    display: flex;
+    padding-top:350px;
+    padding-left:180px;
+
+}
+.container_logo img {
+    margin-right: 10px;
 }
 
 /*Historia - Guilherme*/
@@ -120,7 +128,11 @@ html{
     padding-top:50px;
     padding-left:50px;
     float:left;
-    text-shadow: black 0.1em 0.1em 0.2em
+    text-shadow: black 0.1em 0.1em 0.2em;
+    display:flex;
+}
+#menu_cardapio_left h1 {
+    margin-left: 15px;
 }
 #menu_cardapio_meio{
     height:100%;
