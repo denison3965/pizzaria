@@ -142,7 +142,7 @@ html{
     padding-left:30px;
 }
 #menu_cardapio_meio ul{
-    margin-left:200px;
+    margin-left:20px;
     
 }
 #menu_cardapio_meio li{
@@ -197,6 +197,12 @@ html{
     margin:auto;
     
 }
+#meu_cardapio_vendas_bebidas_alcoolatras{
+    height:1100px;
+    width:1700px;
+    margin:auto;
+    text-align: center;
+}
 .escondido{
     display:none;
 }
@@ -214,13 +220,16 @@ html{
     display:block;
 }
 
-.pizza img{
+.imagem_pizza{
     float:left;
     margin-left: 20px
 }
 .pizza h4 {
     margin-top:20px;
     margin-bottom:20px;
+}
+.nome_vinho{
+    margin-left: 0px;  
 }
 #bebidas{
     margin-right: 40px;

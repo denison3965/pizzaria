@@ -14,11 +14,14 @@
 	    	var div1;
 			var div2;
 			var div3;
+			var div4;
 
 			window.onload = function(){
 				div1 = document.getElementById("meu_cardapio_vendas_salgado");
 				div2 = document.getElementById("meu_cardapio_vendas_doce");
 				div3 = document.getElementById("meu_cardapio_vendas_bebidas");
+				div4 = document.getElementById("meu_cardapio_vendas_bebidas_alcoolatras");
+
 
 				var bt1 = document.getElementById("bt1");
 				bt1.onclick = mostrarDiv1;
@@ -26,10 +29,13 @@
 				bt2.onclick = mostrarDiv2;
 				var bt3 = document.getElementById("bt3");
 				bt3.onclick = mostrarDiv3;
+				var bt4 = document.getElementById("bt4");
+				bt4.onclick = mostrarDiv4;
 
 				
 				div2.classList.add("escondido");
 				div3.classList.add("escondido");
+				div4.classList.add("escondido");
 
 			}
 
@@ -37,17 +43,27 @@
 				div1.classList.remove("escondido");
 				div2.classList.add("escondido");
 				div3.classList.add("escondido");
+				div4.classList.add("escondido");
 			}
 			function mostrarDiv2(){
 				div1.classList.add("escondido");
 				div2.classList.remove("escondido");
 				div3.classList.add("escondido");
+				div4.classList.add("escondido");
 
 			}
 			function mostrarDiv3(){
 				div1.classList.add("escondido");
 				div2.classList.add("escondido");
 				div3.classList.remove("escondido");
+				div4.classList.add("escondido");
+
+			}
+			function mostrarDiv4(){
+				div1.classList.add("escondido");
+				div2.classList.add("escondido");
+				div3.classList.add("escondido");
+				div4.classList.remove("escondido");
 
 			}
 	    </script>
@@ -102,6 +118,7 @@
 						<li><button id="bt1"><h2>Pizzas Salgadas</h2></button></li>
 						<li><button id="bt2"><h2>Pizzas Doces</h2></button></li>
 						<li><button id="bt3"><h2>Bebidas</h2></button></li>
+						<li><button id="bt4"><h2>Vinhos</h2></button></li>
 					</ul>
 				</div>
 				<div id ="menu_cardapio_rigth">
@@ -113,7 +130,7 @@
 
 			<div id="meu_cardapio_vendas_salgado">
 				<div class="pizza">
-					<img  class="img_pizzas" src="assets/imagens/pizza_venda.jpg" height="175px" width="175px">
+					<img  class="imagem_pizza" src="assets/imagens/pizza_venda.jpg" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<h5>R$ 35,50</h5>
 					<div class="btn_comprar">
@@ -129,7 +146,7 @@
 				</div>
 				
 				<div class="pizza">
-					<img src="assets/imagens/pizza_venda2.jpg" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_venda2.jpg" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<h5>R$ 35,50</h5>
 					<div class="btn_comprar">
@@ -144,7 +161,7 @@
 					</div>
 				</div>
 				<div class="pizza">
-					<img src="assets/imagens/pizza_venda.jpg" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_venda.jpg" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<h5>R$ 35,50</h5>
 					<div class="btn_comprar">
@@ -159,7 +176,7 @@
 					</div>
 				</div>
 				<div class="pizza">
-					<img src="assets/imagens/pizza_venda2.jpg" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_venda2.jpg" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<h5>R$ 35,50</h5>
 					<div class="btn_comprar">
@@ -174,7 +191,7 @@
 					</div>
 				</div>
 				<div class="pizza">
-					<img src="assets/imagens/pizza_venda.jpg" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_venda.jpg" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<h5>R$ 35,50</h5>
 					<div class="btn_comprar">
@@ -193,7 +210,7 @@
 		    	
 
 				<div class="pizza">
-					<img src="assets/imagens/pizza_venda.jpg" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_venda.jpg" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<h5>R$ 35,50</h5>
 					<div class="btn_comprar">
@@ -208,7 +225,7 @@
 					</div>
 				</div>
 				<div class="pizza">
-					<img src="assets/imagens/pizza_venda2.jpg" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_venda2.jpg" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<h5>R$ 35,50</h5>
 					<div class="btn_comprar">
@@ -223,7 +240,7 @@
 					</div>
 				</div>
 				<div class="pizza">
-					<img src="assets/imagens/pizza_venda.jpg" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_venda.jpg" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<h5>R$ 35,50</h5>
 					<div class="btn_comprar">
@@ -238,7 +255,7 @@
 					</div>
 				</div>
 				<div class="pizza">
-					<img src="assets/imagens/pizza_venda2.jpg" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_venda2.jpg" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<h5>R$ 35,50</h5>
 					<div class="btn_comprar">
@@ -253,7 +270,7 @@
 					</div>
 				</div>
 				<div class="pizza">
-					<img src="assets/imagens/pizza_venda.jpg" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_venda.jpg" height="175px" width="175px">
 					<h4>Sobre essa pizza</h4>
 					<h5>R$ 35,50</h5>
 					<div class="btn_comprar">
@@ -275,7 +292,7 @@
 			<div id="meu_cardapio_vendas_doce">
 				
 				<div class="pizza">
-					<img src="assets/imagens/pizza_doce2.png" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_doce2.png" height="175px" width="175px">
 					<h4>Sobre essa pizza doce</h4>
 					<h5>R$ 30,00</h5>
 					<div class="btn_comprar">
@@ -290,7 +307,7 @@
 				</div>
 
 				<div class="pizza">
-					<img src="assets/imagens/pizza_mm.png" height="175px" width="190px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_mm.png" height="175px" width="190px">
 					<h4>Sobre essa pizza doce</h4>
 					<h5>R$ 30,00</h5>
 					<div class="btn_comprar">
@@ -305,7 +322,7 @@
 				</div>
 
 				<div class="pizza">
-					<img src="assets/imagens/pizza_doce2.png" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_doce2.png" height="175px" width="175px">
 					<h4>Sobre essa pizza doce</h4>
 					<h5>R$ 30,00</h5>
 					<div class="btn_comprar">
@@ -320,7 +337,7 @@
 				</div>
 
 				<div class="pizza">
-					<img src="assets/imagens/pizza_mm.png" height="175px" width="190px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_mm.png" height="175px" width="190px">
 					<h4>Sobre essa pizza doce</h4>
 					<h5>R$ 30,00</h5>
 					<div class="btn_comprar">
@@ -335,7 +352,7 @@
 				</div>
 
 				<div class="pizza">
-					<img src="assets/imagens/pizza_doce2.png" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/pizza_doce2.png" height="175px" width="175px">
 					<h4>Sobre essa pizza doce</h4>
 					<h5>R$ 30,00</h5>
 					<div class="btn_comprar">
@@ -359,7 +376,7 @@
 			<div id="meu_cardapio_vendas_bebidas">
 				
 				<div class="pizza ">
-					<img src="assets/imagens/coca_cola.png" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/coca_cola.png" height="175px" width="175px">
 					<h4>Coca Cola</h4>
 					<h5>R$ 9,00</h5>
 					<div class="btn_comprar">
@@ -368,7 +385,7 @@
 				</div>
 
 				<div class="pizza ">
-					<img src="assets/imagens/coca_zero.png" height="175px" width="175px">
+					<img class="imagem_pizza" src="assets/imagens/coca_zero.png" height="175px" width="175px">
 					<h4>Coca Cola Zero</h4>
 					<h5>R$ 9,00</h5>
 					<div class="btn_comprar">
@@ -377,7 +394,7 @@
 				</div>
 
 				<div class="pizza ">
-					<img src="assets/imagens/fanta.png" height="175px" width="190px">
+					<img class="imagem_pizza" src="assets/imagens/fanta.png" height="175px" width="190px">
 					<h4>Fnata Laranja</h4>
 					<h5>R$ 8,00</h5>
 					<div class="btn_comprar">
@@ -385,19 +402,21 @@
 					</div>
 				</div>
 
-				<div class="pizza ">
-					<img src="assets/imagens/guarana_antartica.png" height="175px" width="200px">
+				<div  class="pizza ">
+					<img class="imagem_pizza" src="assets/imagens/guarana_antartica.png" height="175px" width="200px">
 					<h4>Guarana Antartica</h4>
 					<h5>R$ 7,00</h5>
 					<div class="btn_comprar">
 						<h5>Comprar</h5>
 					</div>
 				</div>
-
 			</div>
+
+
+
 			<div id="meu_cardapio_vendas_bebidas_alcoolatras">
 				<div class="pizza">
-					<img src="assets/imagens/Norton.png" height="175px" width="190px">
+					<img class="nome_vinho" src="assets/imagens/Norton.png" height="180px" width="185px">
 					<h4>Norton</h4>
 					<h5>R$ 40,00</h5>
 					<div class="btn_comprar">
@@ -406,7 +425,7 @@
 				</div>
 
 				<div class="pizza">
-					<img src="assets/imagens/Aurora.png" height="175px" width="190px">
+					<img class="nome_vinho" src="assets/imagens/Aurora.png" height="180px" width="185px">
 					<h4>Aurora</h4>
 					<h5>R$ 40,00</h5>
 					<div class="btn_comprar">
@@ -415,7 +434,7 @@
 				</div>
 
 				<div class="pizza">
-					<img src="assets/imagens/Perez_cruz.png" height="175px" width="190px">
+					<img class="nome_vinho" src="assets/imagens/Perez_cruz.png" height="180px" width="185px">
 					<h4>Perez Cruz</h4>
 					<h5>R$ 40,00</h5>
 					<div class="btn_comprar">
@@ -424,8 +443,8 @@
 				</div>
 
 				<div class="pizza">
-					<img src="assets/imagens/Aime.png" height="175px" width="190px">
-					<h4>Aimé</h4>
+					<img class="nome_vinho" src="assets/imagens/Aime.png" height="180px" width="185px">
+					<h4 >Aimé</h4>
 					<h5>R$ 40,00</h5>
 					<div class="btn_comprar">
 						<h5>Comprar</h5>
